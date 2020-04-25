@@ -9,7 +9,7 @@ import logoImg from '../../assets/logo.svg';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 // Contexts
-import AuthContext from '../../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -19,16 +19,11 @@ import { Container, Content, Background } from './styles';
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
-  const auth = useContext(AuthContext);
-
-  console.log(auth);
-
   const handleSubmit = useCallback(async (data: object) => {
     try {
       formRef.current?.setErrors({});
 
       const schema = Yup.object().shape({
-        name: Yup.string().required('Nome obrigatório'),
         email: Yup.string()
           .email('Digite um e-mail válido')
           .required('E-mail obrigatório'),
@@ -43,6 +38,7 @@ const SignIn: React.FC = () => {
         name: 'Nome obrigatório',
       });
     } catch (error) {
+      console.log(error);
       const errors = getValidationErrors(error);
 
       formRef.current?.setErrors(errors);
