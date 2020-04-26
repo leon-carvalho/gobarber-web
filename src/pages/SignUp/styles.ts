@@ -1,5 +1,5 @@
 import { shade } from 'polished';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import signUpBackgroundImage from '../../assets/sign-up-background.png';
 
@@ -9,15 +9,35 @@ export const Container = styled.div`
   display: flex;
   align-items: stretch;
 `;
-
 export const Content = styled.section`
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  align-items: center;
+  place-content: center;
+  flex-direction: column;
+`;
+
+const appearFromRightAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+export const AnimationContainer = styled.div`
   display: flex;
   align-items: center;
   place-content: center;
   flex-direction: column;
 
-  width: 100%;
-  max-width: 700px;
+  animation: ${appearFromRightAnimation} 0.6s;
 
   form {
     width: 340px;
@@ -32,19 +52,31 @@ export const Content = styled.section`
     h1 {
       margin-bottom: 24px;
     }
+
+    a {
+      display: block;
+      color: #f4ede8;
+      margin-top: 14px;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${shade(0.2, '#f4ede8')};
+      }
+    }
   }
 
   > a {
     display: flex;
     align-items: center;
 
-    color: #f4ede8;
+    color: #ff9000;
     margin-top: -40px;
     text-decoration: none;
     transition: color 0.2s;
 
     &:hover {
-      color: ${shade(0.2, '#f4ede8')};
+      color: ${shade(0.2, '#ff9000')};
     }
 
     svg {
@@ -53,8 +85,20 @@ export const Content = styled.section`
   }
 `;
 
+const fadeAnimation = keyframes`
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
 export const Background = styled.div`
   flex: 1;
   background: url(${signUpBackgroundImage}) no-repeat center;
   background-size: cover;
+
+  animation: ${fadeAnimation} 0.6s;
 `;
