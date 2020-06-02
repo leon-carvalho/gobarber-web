@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.main``;
+export const Container = styled.div``;
 
 export const Header = styled.header`
   padding: 32px 16px;
@@ -73,10 +73,103 @@ export const Profile = styled.div`
       color: #ff9900;
     }
   }
+`;
 
-  /* display: flex;
-  margin-left: 80px;
-  align-items: center;
+export const Content = styled.main`
+  max-width: 1120px;
+  margin: 64px auto;
+  display: flex;
+`;
 
-  */
+export const Schedule = styled.div`
+  flex: 1;
+  margin-right: 120px;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    color: #ff9900;
+    margin-top: 8px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    span + span::before {
+      content: '';
+      width: 1px;
+      height: 12px;
+      margin: 0 8px;
+      background: #ff9900;
+    }
+  }
+`;
+
+export const NextAppointment = styled.div`
+  margin-top: 64px;
+
+  strong {
+    color: #999591;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    margin-top: 24px;
+    padding: 16px 24px;
+    background: #3e3b47;
+    border-radius: 10px;
+    position: relative;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 10%;
+
+      width: 2px;
+      height: 80%;
+      opacity: 0.8;
+      background: #ff9900;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #999591;
+    }
+
+    strong {
+      color: #fff;
+      margin-left: 24px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      color: #999591;
+      margin-left: auto;
+
+      svg {
+        color: #ff9900;
+        margin-right: 8px;
+      }
+    }
+  }
+`;
+
+export const Calendar = styled.aside`
+  width: 380px;
 `;
