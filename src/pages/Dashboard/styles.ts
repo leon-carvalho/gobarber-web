@@ -175,6 +175,7 @@ export const Section = styled.section`
   margin-top: 48px;
 
   > strong {
+    width: 70px;
     color: #999591;
     display: block;
     font-size: 20px;
@@ -182,6 +183,10 @@ export const Section = styled.section`
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #3e3b47;
+  }
+
+  > p {
+    color: #888591;
   }
 `;
 
@@ -275,6 +280,7 @@ export const Calendar = styled.aside`
   }
 
   .DayPicker-Day--disabled {
+    cursor: not-allowed;
     color: #666360 !important;
     background: transparent !important;
   }
