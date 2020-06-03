@@ -1,5 +1,6 @@
 import { shade } from 'polished';
-import styled from 'styled-components';
+import { FiLoader } from 'react-icons/fi';
+import styled, { css, keyframes } from 'styled-components';
 
 export const Container = styled.button`
   border: 0;
@@ -16,4 +17,15 @@ export const Container = styled.button`
   &:hover {
     background: ${shade(0.2, '#ff9000')};
   }
+`;
+
+const rotate = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+`;
+
+export const Loader = styled(FiLoader)`
+  ${css`
+    animation: ${rotate} 2s linear infinite;
+  `}
 `;

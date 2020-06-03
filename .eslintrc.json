@@ -39,12 +39,14 @@
       "extensions": [".tsx"]
     }],
     "react/jsx-one-expression-per-line": "off",
+    "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
         "allowExpressions": true
       }
     ],
+    "import/no-duplicates": "off",
     "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
