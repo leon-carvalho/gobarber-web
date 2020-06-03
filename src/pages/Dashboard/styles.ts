@@ -70,8 +70,13 @@ export const Profile = styled.div`
       color: #f4ede8;
     }
 
-    strong {
+    a {
       color: #ff9900;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 `;
