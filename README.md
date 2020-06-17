@@ -17,17 +17,9 @@
   </a>
 </p>
 
-## 🕵️‍♂️ Sobre o projeto
-
-**GoBarber** - aplicação para agendar e gerenciar serviços de beleza com foco em barbearias, onde prestadores de serviços podem se cadastrar, e usuários poderão marcar agendamentos com estes prestadores.
-
-O GoBarber possuí uma API Rest global e diferentes versões com base no tipo de usuário:
-
-- 🖥 Web - voltada para os prestadores de serviço oferece um dashboard para visualização dos agendamentos.
-- 📱 Mobile - voltada para o usuário onde é possível criar agendamentos com um prestador.
-
 ## 📍Índice
 
+- [Sobre o projeto](#about)
 - [Como rodar este projeto?](#run)
   - [Pré-requisitos](#prerequisit)
   - [Rodando o projeto](#running)
@@ -37,6 +29,18 @@ O GoBarber possuí uma API Rest global e diferentes versões com base no tipo de
 - [Agradecimentos](#acknowledgement)
 - [Autores](#authors)
 - [License](#license)
+
+## 🕵️‍♂️ Sobre o projeto <a name="about"></a>
+
+**GoBarber** - aplicação para agendar e gerenciar serviços de beleza com foco em barbearias, onde prestadores de serviços podem se cadastrar, e usuários poderão marcar agendamentos com estes prestadores.
+
+O GoBarber possuí uma API Rest global e diferentes versões com base no tipo de usuário:
+
+- 🖥 Web - voltada para os prestadores de serviço oferece um dashboard para visualização dos agendamentos.
+- 📱 [Mobile][gobarber-mobile] - voltada para o usuário onde é possível criar agendamentos com um prestador.
+- 🚏 [API REST][gobarber-api] - "global" serve dados tanto para os prestadores de serviço quanto usuários.
+
+
 
 ## 🚀 Como rodar este projeto? <a name="run"></a>
 
@@ -54,7 +58,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 Acesse o repositório com a [API do GoBarber][gobarber-api] para saber como executá-lo.
 
-### 🚀Rodando o projeto <a name="running"></a>
+### Rodando o projeto <a name="running"></a>
 
 ```bash
 # Clone este repositório
@@ -119,9 +123,9 @@ Prints das telas da aplicação:
 
 Feito com ❤️ por Leonardo Carvalho
 
-GitHub - [@leon-carvalho](https://github.com/leon-carvalho/)
+GitHub - [@leon-carvalho][github]
 
-LinkedIn - [entre em contato!](https://www.linkedin.com/in/leonardo-dev/)
+LinkedIn - [entre em contato!][linkedin]
 
 ## 📝 Licença <a name="license"></a>
 Este projeto esta sobe a licença MIT. Veja a [LICENÇA](./LICENSE) para saber mais.
@@ -134,3 +138,6 @@ Este projeto esta sobe a licença MIT. Veja a [LICENÇA](./LICENSE) para saber m
 [rs]: https://rocketseat.com.br
 [diego3g]: https://github.com/diego3g
 [gobarber-api]: https://github.com/leon-carvalho/gobarber-api
+[gobarber-mobile]: https://github.com/leon-carvalho/gobarber-mobile
+[github]: https://github.com/leon-carvalho/
+[linkedin]: https://www.linkedin.com/in/leonardo-dev/
