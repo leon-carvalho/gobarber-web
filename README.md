@@ -1,44 +1,136 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <img src="./docs/logo.svg">
+</h1>
 
-## Available Scripts
+<h4 align="center"> Bootcamp GoStack 11 🚀</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/leon-carvalho/gobarber-web?color=%2304D361">
 
-### `yarn start`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/leon-carvalho/gobarber-web">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <a href="https://github.com/leon-carvalho/gobarber-web/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/leon-carvalho/gobarber-web">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  </a>
+</p>
 
-### `yarn test`
+## 🕵️‍♂️ Sobre o projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**GoBarber** - aplicação para agendar e gerenciar serviços de beleza com foco em barbearias, onde prestadores de serviços podem se cadastrar, e usuários poderão marcar agendamentos com estes prestadores.
 
-### `yarn build`
+O GoBarber possuí uma API Rest global e diferentes versões com base no tipo de usuário:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🖥 Web - voltada para os prestadores de serviço oferece um dashboard para visualização dos agendamentos.
+- 📱 Mobile - voltada para o usuário onde é possível criar agendamentos com um prestador.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 📍Índice
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Como rodar este projeto?](#run)
+  - [Pré-requisitos](#prerequisit)
+  - [Rodando o projeto](#running)
+- [Tecnologias](#techs)
+- [Demonstração](#demo)
+- [Como contribuir](#contributing)
+- [Agradecimentos](#acknowledgement)
+- [Autores](#authors)
+- [License](#license)
 
-### `yarn eject`
+## 🚀 Como rodar este projeto? <a name="run"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Pré-requisitos <a name="prerequisit"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Node.js][nodejs] - para executar JavaScript fora do navegador
+- [NPM] ou [Yarn] para instalar as dependências do projeto
+- [API do GoBarber][gobarber-api] - para consumir os dados dos usuários, agendamentos...
+- [Git](https://git-scm.com) - caso queira clonar o projeto no GitHub (Você pode simplesmente fazer o dowload pelo GitHub caso ache melhor)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+> 🚨🚨 IMPORTANTE!! 🚨🚨 - é preciso estar executando a `API do GoBarber` para ter acesso aos dados que serão consumidos por esta aplicação.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Acesse o repositório com a [API do GoBarber][gobarber-api] para saber como executá-lo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🚀Rodando o projeto <a name="running"></a>
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/leon-carvalho/gobarber-web
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd gobarber-web
+
+# Instale as dependências
+$ yarn
+# Ou use NPM se preferir
+$ npm install
+
+# Execute os testes da aplicação com o comando
+$ yarn test
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# A aplicação será aberta em um servidor local basta acessar http://localhost:3000
+```
+## 🛠 Tecnologias <a name="techs"></a>
+
+Principais ferramentas usadas na construção do projeto:
+
+- React
+- Axios
+- Unform
+- ESLint
+- Prettier
+- Date Fns
+- Polished
+- TypeScript
+- React Icons
+- React Spring
+- EditorConfig
+- React Router Dom
+- Styled Components
+- React Day Picker
+
+## 👀 Demonstração <a name="demo"></a>
+
+Prints das telas da aplicação:
+
+<div align="center">
+  <img src="./docs/demo.svg"></img>
+</div>
+
+## 🤔 Como contribuir para o projeto? <a name="contributing"></a>
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
+
+## 👏 Agradecimentos <a name="acknowledgement"></a>
+- [Time da Rocketseat][rs]
+- [Diego Fernandes, CTO at Rocketseat][diego3g]
+
+## ✍🏽 Autores <a name="authors"></a>
+
+Feito com ❤️ por Leonardo Carvalho
+
+GitHub - [@leon-carvalho](https://github.com/leon-carvalho/)
+
+LinkedIn - [entre em contato!](https://www.linkedin.com/in/leonardo-dev/)
+
+## 📝 Licença <a name="license"></a>
+Este projeto esta sobe a licença MIT. Veja a [LICENÇA](./LICENSE) para saber mais.
+
+[react]: https://pt-br.reactjs.org/
+[nodejs]: https://nodejs.org/
+[npm]: https://www.npmjs.com/
+[jest]: https://www.jestjs.io
+[yarn]: https://yarnpkg.com/
+[rs]: https://rocketseat.com.br
+[diego3g]: https://github.com/diego3g
+[gobarber-api]: https://github.com/leon-carvalho/gobarber-api
